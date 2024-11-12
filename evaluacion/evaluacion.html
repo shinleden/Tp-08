@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluacion</title>
+
+    <style>
+
+        /*Cree esta clase para definir el ancho, altura, posicion y color que tendria la que en teoria seria la foto, tambien defini una linea que recorriera la foto y le defini un color*/
+        .foto {
+            width: 150px;
+            height: 150px;
+            border-radius: 40px;
+            background-color: gray;
+            border: 5px solid blue;
+            margin-left: 70px;
+            margin-top: 25px;
+        }
+        /*Esta caja seria la pagina en su totalidad, le aplique el display-flex para poder modificarla y hacer que las cajas "curriculo" se pusieran una al lado de la otra*/
+        .cajat {
+            display: flex;
+            background-color: whitesmoke;
+            align-items: center;
+            justify-content: center;
+        }
+        /*Cree esta clase para definir el ancho y altura que tendria la caja del propio curriculo, ademas de definir el color del fondo*/
+        .curriculoA {
+            width: 300px;
+            height: 500px;
+            background-color: white;
+            border-radius: 10px;
+        }
+        /*Cree esta clase para definir el ancho y altura que tendria la caja del propio curriculo, ademas de definir el color del fondo*/
+        .curriculoM {
+            width: 300px;
+            height: 500px;
+            background-color: white;
+            border-radius: 10px;
+        }
+         /*Cree una linea que separa el texto de los iconos*/
+        .lineaA {
+            border: 1px solid whitesmoke;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        /*Cree una linea que separa el texto de los iconos*/
+        .lineaM {
+            border: 1px solid whitesmoke;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 34px;
+        }
+        /*Cree una clase para que los iconos de las redes se pusieran una al lado de la ora y que se esparcieran horizontalmente*/
+        .redes {
+            display: flex;
+            justify-content: space-around;
+        }
+        /*Modifique las imagenes de Twitter, Linkedin y Github e hice que se movieran 20px de arriba*/
+        .redes img {
+            width: 25px;
+            height: 25px;
+            margin-top: 20px;
+        }
+        /*Cree una clase la cual define el tamaño, posicion y color del propio fondo y la letra e hice que el texto se alineara en el centro de la propia caja*/
+        .online {
+            width: 60px;
+            height: 20px;
+            position: absolute;
+            top: 20px;
+            right: 970px;
+            background-color: green;
+            color: white;
+            border-radius: 30px;
+            text-align: center;
+            align-items: center;
+        }
+        /*Cree una clase la cual define el tamaño, posicion y color del propio fondo y la letra e hice que el texto se alineara en el centro de la propia caja*/
+        .offline {
+            width: 60px;
+            height: 20px;
+            position: absolute;
+            top: 20px;
+            right: 670px;
+            background-color: red;
+            color: white;
+            border-radius: 30px;
+            text-align: center;
+            align-items: center;
+        }
+        /*Cree una clase la cual define la posicion, tamaño, color (de la letra y del fondo), y tambien se encarga de que el texto y la imagen esten centrados en la caja.*/
+        .contactar {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            background-color: gray;
+            border-radius: 50px;
+            color: white;
+            font-size: 20px;
+            width: 150px;
+            text-align: center;
+            align-items: center;
+        }
+        /*Modifique la imagen del sobre la cual se encontraba adentro de la caja "contactar", e hice que se moviera 20 pixeles de la izquierda*/
+        .contactar img {
+            margin-left: 20px;
+            width: 25px;
+            height: 25px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!--Cree una caja la cual contiene todas las demas-->
+    <div class="cajat">
+        <!--Esta caja contiene todo el contenido, el cual incluiria foto y texto -->
+        <div class="curriculoA">
+            <div class="foto">
+                <img src="https://via.placehorder.com/150" alt="">
+            </div>
+            <div>
+                <!--A cada uno de los textos les aplique el "text-align: center para que se alinearan al centro de la caja"-->
+                <div style="text-align: center;">
+                    <h1>Ana Garcia</h1>
+                </div>
+                <div style="text-align: center;">
+                    <p>Desarrolladora Web Frontend</p>
+                </div>
+                <div style="text-align: center;">
+                    <p>Apasionada por crear experiencias web increibles para toda la comunidad de Rio Negro</p>
+                </div>
+            </div>
+            <!--Cree una caja la cual contiene la clase lineaA y es la que permite que este la linea que divide el texto de los iconos-->
+            <div class="lineaA"></div>
+            <div class="redes">
+                <div>
+                    <img src="twitter.png" style="margin-left: 60px;" alt="Twitter">
+                </div>
+                <div>
+                    <img src="linkedin.png" alt="linkedin">
+                </div>
+                <div>
+                    <img src="github.png" style="margin-right: 60px;" alt="GitHub">
+                </div>
+                <div class="online">
+                    <span>Online</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="curriculoM">
+            <div class="foto">
+                <img src="https://via.placehorder.com/150" alt="">
+            </div>
+            <div>
+                <div style="text-align: center;">
+                    <h1>Mina Murray</h1>
+                </div>
+                <div style="text-align: center;">
+                    <p>Backend Developer</p>
+                </div>
+                <div style="text-align: center;">
+                    <p>Experiencia desarrollando microservicios y servicios REST. Experiencia en AWS</p>
+                </div>
+            </div>
+            <div class="lineaM"></div>
+            <div class="redes">
+                <div>
+                    <img src="twitter.png" style="margin-left: 60px;" alt="Twitter">
+                </div>
+                <div>
+                    <img src="linkedin.png" alt="linkedin">
+                </div>
+                <div>
+                    <img src="github.png" style="margin-right: 60px;" alt="GitHub">
+                </div>
+                <div class="offline">
+                    <span>Offline</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contactar">
+        <img src="sobre.png" alt="">
+        <p style="margin-left: 5px;">Contactar</p>
+    </div>
+ 
+    <!--  curriculo a          position: relative;
+            left: 250px;
+           -->
+
+    <!-- curriculo m
+         position: relative;
+            right: 400px;-->
+
+
+
+
+
+</body>
+
+</html>
