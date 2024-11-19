@@ -10,35 +10,32 @@
 
         /*Cree esta clase para definir el ancho, altura, posicion y color que tendria la que en teoria seria la foto, tambien defini una linea que recorriera la foto y le defini un color*/
         .foto {
-            width: 150px;
-            height: 150px;
+            display: flex;
+            justify-content: center;
+        }
+        .foto img{
             border-radius: 40px;
-            background-color: gray;
             border: 5px solid blue;
-            margin-left: 70px;
-            margin-top: 25px;
+            margin-top: 30px;
         }
         /*Esta caja seria la pagina en su totalidad, le aplique el display-flex para poder modificarla y hacer que las cajas "curriculo" se pusieran una al lado de la otra*/
         .cajat {
             display: flex;
+            gap: 15px;
             background-color: whitesmoke;
             align-items: center;
             justify-content: center;
         }
         /*Cree esta clase para definir el ancho y altura que tendria la caja del propio curriculo, ademas de definir el color del fondo*/
-        .curriculoA {
+        .curriculo {
             width: 300px;
             height: 500px;
             background-color: white;
             border-radius: 10px;
+            position: relative;
         }
         /*Cree esta clase para definir el ancho y altura que tendria la caja del propio curriculo, ademas de definir el color del fondo*/
-        .curriculoM {
-            width: 300px;
-            height: 500px;
-            background-color: white;
-            border-radius: 10px;
-        }
+
          /*Cree una linea que separa el texto de los iconos*/
         .lineaA {
             border: 1px solid whitesmoke;
@@ -69,7 +66,7 @@
             height: 20px;
             position: absolute;
             top: 20px;
-            right: 970px;
+            right: 5px;
             background-color: green;
             color: white;
             border-radius: 30px;
@@ -82,7 +79,7 @@
             height: 20px;
             position: absolute;
             top: 20px;
-            right: 670px;
+            right: 5px;
             background-color: red;
             color: white;
             border-radius: 30px;
@@ -91,7 +88,7 @@
         }
         /*Cree una clase la cual define la posicion, tamaño, color (de la letra y del fondo), y tambien se encarga de que el texto y la imagen esten centrados en la caja.*/
         .contactar {
-            position: absolute;
+            position: fixed;
             bottom: 30px;
             right: 30px;
             display: flex;
@@ -100,7 +97,6 @@
             color: white;
             font-size: 20px;
             width: 150px;
-            text-align: center;
             align-items: center;
         }
         /*Modifique la imagen del sobre la cual se encontraba adentro de la caja "contactar", e hice que se moviera 20 pixeles de la izquierda*/
@@ -119,9 +115,9 @@
     <!--Cree una caja la cual contiene todas las demas-->
     <div class="cajat">
         <!--Esta caja contiene todo el contenido, el cual incluiria foto y texto -->
-        <div class="curriculoA">
+        <div class="curriculo">
             <div class="foto">
-                <img src="https://via.placehorder.com/150" alt="">
+                <img src="https://via.placeholder.com/150.png" alt="">
             </div>
             <div>
                 <!--A cada uno de los textos les aplique el "text-align: center para que se alinearan al centro de la caja"-->
@@ -153,9 +149,9 @@
             </div>
         </div>
 
-        <div class="curriculoM">
+        <div class="curriculo">
             <div class="foto">
-                <img src="https://via.placehorder.com/150" alt="">
+                <img src="https://via.placeholder.com/150" alt="">
             </div>
             <div>
                 <div style="text-align: center;">
